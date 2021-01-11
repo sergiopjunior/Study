@@ -1,0 +1,161 @@
+/* Variables */
+
+:root {
+    --bkground: rgb(250, 250, 250);
+    --group-color: rgb(255, 255, 255);
+    --group-border: 1px solid rgb(219, 219, 219);
+    --simple-link: rgb(0, 149, 246);
+    --fontcolor1: rgb(255, 255, 255);
+}
+
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body, html {
+    min-height: 100%;
+    width: 100%;
+    background-color: var(--bkground);
+    display: flex;
+    justify-content: center;
+}
+
+.simple-link {
+    color: var(--simple-link);
+    font-weight: 600;
+}
+
+/* Content */
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* Instagram Phone */
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instagram Continue */
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 350px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--group-color);
+    width: 100%;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    border: var(--group-border);
+}
+
+.instagram-logo {
+    background-image: url('../img/sprite_core.png');
+    background-repeat: no-repeat;
+    background-position: 0px -130px;
+    height: 51px;
+    width: 175px;
+    text-indent: -9999em;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.profile-photo img {
+    max-height: 100px;
+}
+
+.continue-login {
+    border-radius: 4px;
+    color: var(--fontcolor1);
+    border: 1px solid transparent;
+    background-color: var(--simple-link);
+    font-weight: 600;
+    padding: 5px 9px;
+    margin: 8px 40px;
+}
+
+.remove-account {
+    margin: 10px 0;
+}
+
+.not-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+span + span {
+    margin-top: 5px;
+}
+
+/* Get the app */
+
+.get-the-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.get-app {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.download {
+    margin: 10px 0;
+}
+
+.download-app img {
+    height: 40px;
+}
+
+@media (max-width: 875px) {
+    .instagram-phone {
+        display: none;
+    }
+}
