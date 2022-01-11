@@ -3,5 +3,4 @@
 **Projects:**
 
 - *Instagram - Login Page*
-- *Netflix - Login Page*
 
